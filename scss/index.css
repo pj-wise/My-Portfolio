@@ -18,6 +18,14 @@ nav .nav-item {
   margin-left: 0.5em;
 }
 
+nav .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .dropdown-menu .dropdown-item {
+  color: #f2faff;
+}
+
 .header {
   height: 100vh;
   -webkit-box-pack: center;

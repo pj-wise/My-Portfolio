@@ -14,8 +14,12 @@ nav .navLogo {
   width: 110px;
 }
 
-nav .nav-item {
-  margin-left: 0.5em;
+nav .navbar-nav .nav-item {
+  margin-left: 0;
+}
+
+nav .navbar-nav .nav-item a:link {
+  font-weight: 700;
 }
 
 nav .dropdown-menu {
@@ -83,6 +87,15 @@ nav .dropdown-menu .dropdown-item {
 
 .mainContent .about p {
   font-size: 18px;
+}
+
+.mainContent .about .calendarCont {
+  width: 85%;
+  margin: 1em auto 0 auto;
+}
+
+.mainContent .about .calendarCont .calendar {
+  width: 100%;
 }
 
 .mainContent .about .know1 {

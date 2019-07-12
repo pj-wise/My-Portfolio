@@ -1,7 +1,24 @@
+html,
+body {
+  .allContent {
+    font-family: "Architects Daughter", cursive;
+  }
+}
+
 .navbar.scrolled {
   border-bottom: 2px solid #76a7bc;
   background-color: #f2faff !important;
   transition: background-color 200ms linear;
+}
+
+nav {
+  .navLogo {
+    width: 110px;
+  }
+
+  .nav-item {
+    margin-left: 0.5em;
+  }
 }
 
 .header {
@@ -10,38 +27,96 @@
   text-align: center;
   background-image: url("../imgs/headerBack.jpeg");
   background-size: cover;
-  nav {
-    .navLogo {
-      width: 110px;
-    }
-
-    .nav-item {
-      margin-left: 0.5em;
-    }
-  }
-
+  border-bottom: 4px solid #6ecddd;
   .headerContent {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 5em 1em;
 
-    @media (min-width: 375px) {
-      h1 {
-        font-size: 2.8em;
-        font-weight: 400;
-      }
-
-      h2 {
-        font-weight: 300;
-      }
-    }
-
     .learnBtn button {
       margin: 4em 0;
       font-weight: 500;
       background-color: rgba(255, 255, 255, 0.3);
       border: 1px solid black;
+    }
+  }
+}
+
+.mainContent {
+  border-top: 3px solid #0872ba;
+  border-bottom: 3px solid #0872ba;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .about {
+    border-bottom: 2px solid #6ecddd;
+    padding-bottom: 2em;
+
+    h2,
+    h4 {
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    .know1 {
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-evenly;
+      p {
+        font-weight: 600;
+      }
+      .icon {
+        img {
+          width: 70px;
+        }
+      }
+    }
+    .know2 {
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-evenly;
+      p {
+        font-weight: 600;
+      }
+      .icon {
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .header {
+    h1 {
+      font-size: 2.7em;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  .about {
+    .know1 {
+      .icon {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .know2 {
+      .icon {
+        p {
+          font-size: 12px;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,47 @@
+.navbar.scrolled {
+  border-bottom: 2px solid #76a7bc;
+  background-color: #f2faff !important;
+  transition: background-color 200ms linear;
+}
+
+.header {
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../imgs/headerBack.jpeg");
+  background-size: cover;
+  nav {
+    .navLogo {
+      width: 110px;
+    }
+
+    .nav-item {
+      margin-left: 0.5em;
+    }
+  }
+
+  .headerContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em 1em;
+
+    @media (min-width: 375px) {
+      h1 {
+        font-size: 2.8em;
+        font-weight: 400;
+      }
+
+      h2 {
+        font-weight: 300;
+      }
+    }
+
+    .learnBtn button {
+      margin: 4em 0;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+    }
+  }
+}

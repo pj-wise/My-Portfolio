@@ -146,6 +146,18 @@ nav .dropdown-menu .dropdown-item {
   width: 70px;
 }
 
+.mainContent .projects {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 @media (min-width: 375px) {
   .header h1 {
     font-size: 2.7em;

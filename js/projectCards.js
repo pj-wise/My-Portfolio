@@ -1,17 +1,44 @@
 const projectInfo = [
   {
-    img: "../imgs/umts-screen.png",
     name: "Use My Tech Stuff",
+    img: "../imgs/umts-screen.png",
     languages: "HTML, CSS, JS",
-    info: ""
+    info:
+      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
+    siteLink:
+      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
+    codeLink:
+      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
+  },
+  {
+    name: "Use My Tech Stuff",
+    img: "../imgs/umts-screen.png",
+    languages: "HTML, CSS, JS",
+    info:
+      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
+    siteLink:
+      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
+    codeLink:
+      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
+  },
+  {
+    name: "Use My Tech Stuff",
+    img: "../imgs/umts-screen.png",
+    languages: "HTML, CSS, JS",
+    info:
+      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
+    siteLink:
+      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
+    codeLink:
+      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
   }
 ];
 
-const projectSection = document.querySelector(".projects");
-console.log(document.querySelector(".projects"));
+const cardSection = document.querySelector(".cardContainer");
+console.log(document.querySelector(".cardContainer"));
 
 projectInfo.forEach(data => {
-  projectSection.appendChild(projectComp(data));
+  cardSection.appendChild(projectComp(data));
 });
 
 function projectComp(data) {
@@ -27,16 +54,38 @@ function projectComp(data) {
   cardBody.classList.add("card-body");
 
   const cardTitle = document.createElement("h5");
+  cardTitle.classList.add("card-title");
   cardTitle.textContent = data.name;
 
   const cardLang = document.createElement("p");
   cardLang.classList.add("card-text", "card-lang");
   cardLang.textContent = data.languages;
 
+  const cardInfo = document.createElement("p");
+  cardInfo.classList.add("card-text");
+  cardInfo.textContent = data.info;
+
+  const btnContainer = document.createElement("div");
+  btnContainer.classList.add("btn-container");
+
+  const visitBtn = document.createElement("a");
+  visitBtn.classList.add("btn", "btn-light");
+  visitBtn.textContent = "Visit Site";
+  visitBtn.href = data.siteLink;
+
+  const codeBtn = document.createElement("a");
+  codeBtn.classList.add("btn", "btn-light");
+  codeBtn.textContent = "See Code";
+  codeBtn.href = data.codeLink;
+
   projectCard.appendChild(cardImg);
   projectCard.appendChild(cardBody);
   cardBody.appendChild(cardTitle);
   cardBody.appendChild(cardLang);
+  cardBody.appendChild(cardInfo);
+  cardBody.appendChild(btnContainer);
+  btnContainer.appendChild(visitBtn);
+  btnContainer.appendChild(codeBtn);
 
   return projectCard;
 }

@@ -48,7 +48,7 @@ nav {
     display        : flex;
     justify-content: center;
     flex-direction : column;
-    padding        : 15em 1em;
+    padding        : 16em 1em;
 
     .learnBtn button {
       margin          : 4em 0;
@@ -67,6 +67,7 @@ nav {
   flex-wrap      : wrap;
   justify-content: center;
   text-align     : center;
+  background     : linear-gradient(to bottom, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 1) 15%, rgba(232, 232, 232, 1) 36%, rgba(151, 226, 237, 1) 65%, rgba(110, 205, 221, 1) 100%);
 
   .about {
     border-bottom : 2px solid #6ecddd;
@@ -86,11 +87,12 @@ nav {
     }
 
     .calendarCont {
-      width : 85%;
+      width : 90%;
       margin: 1em auto 0 auto;
 
       .calendar {
-        width: 100%;
+        width           : 100%;
+        background-color: rgba(255, 255, 255, 0.8);
       }
     }
 
@@ -128,13 +130,54 @@ nav {
   }
 
   .projects {
-    margin         : 2em 0;
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: space-evenly;
+    margin         : 1.5em 0 0 0;
+    justify-content: center;
 
-    .card-body {
-      .card-lang {}
+    h2 {
+      margin-bottom: 1em;
+      font-weight  : 600;
+    }
+
+    .cardContainer {
+      display  : flex;
+      flex-wrap: wrap;
+      width    : 100%;
+
+      .card {
+        background-color  : rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 5px 5px 8px 2px #5874d0;
+        box-shadow        : 5px 5px 8px 2px #5874d0;
+        width             : 100%;
+        margin-bottom     : 1.5em;
+
+        .card-body {
+          .card-title {
+            font-weight: bold;
+          }
+
+          .card-lang {
+            font-weight: 600;
+          }
+
+          .btn-container {
+            display        : flex;
+            justify-content: center;
+
+            .btn {
+              border: 1px solid lightgrey;
+
+              &:first-child {
+                margin-right: 0.5em;
+              }
+
+              &:last-child {
+                margin-left: 0.5em;
+              }
+
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -165,6 +208,56 @@ nav {
         p {
           font-size: 12px;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    h1 {
+      font-size  : 4em;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size  : 3em;
+      font-weight: 300;
+    }
+
+    .learnBtn button {
+      margin          : 4em 0;
+      font-size       : 1.5em;
+      font-weight     : 500;
+      background-color: rgba(255, 255, 255, 0.3);
+      border          : 1px solid black;
+    }
+  }
+
+  .about {
+    .know1 {
+      .icon {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .know2 {
+      .icon {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .projects {
+    .cardContainer {
+      justify-content: space-evenly;
+
+      .card {
+        width: 35% !important;
       }
     }
   }

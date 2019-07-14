@@ -58,7 +58,7 @@ nav .dropdown-menu .dropdown-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15em 1em;
+  padding: 16em 1em;
 }
 
 .header .headerContent .learnBtn button {
@@ -81,6 +81,8 @@ nav .dropdown-menu .dropdown-item {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), color-stop(15%, whitesmoke), color-stop(36%, #e8e8e8), color-stop(65%, #97e2ed), to(#6ecddd));
+  background: linear-gradient(to bottom, whitesmoke 0%, whitesmoke 15%, #e8e8e8 36%, #97e2ed 65%, #6ecddd 100%);
 }
 
 .mainContent .about {
@@ -102,12 +104,13 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent .about .calendarCont {
-  width: 85%;
+  width: 90%;
   margin: 1em auto 0 auto;
 }
 
 .mainContent .about .calendarCont .calendar {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .mainContent .about .know1 {
@@ -147,15 +150,61 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent .projects {
-  margin: 2em 0;
+  margin: 1.5em 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContent .projects h2 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.mainContent .projects .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 100%;
+}
+
+.mainContent .projects .cardContainer .card {
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 8px 2px #5874d0;
+  box-shadow: 5px 5px 8px 2px #5874d0;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.mainContent .projects .cardContainer .card .card-body .card-title {
+  font-weight: bold;
+}
+
+.mainContent .projects .cardContainer .card .card-body .card-lang {
+  font-weight: 600;
+}
+
+.mainContent .projects .cardContainer .card .card-body .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContent .projects .cardContainer .card .card-body .btn-container .btn {
+  border: 1px solid lightgrey;
+}
+
+.mainContent .projects .cardContainer .card .card-body .btn-container .btn:first-child {
+  margin-right: 0.5em;
+}
+
+.mainContent .projects .cardContainer .card .card-body .btn-container .btn:last-child {
+  margin-left: 0.5em;
 }
 
 @media (min-width: 375px) {
@@ -171,6 +220,38 @@ nav .dropdown-menu .dropdown-item {
   }
   .about .know2 .icon p {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 4em;
+    font-weight: 600;
+  }
+  .header h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .header .learnBtn button {
+    margin: 4em 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid black;
+  }
+  .about .know1 .icon p {
+    font-size: 18px;
+  }
+  .about .know2 .icon p {
+    font-size: 18px;
+  }
+  .projects .cardContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projects .cardContainer .card {
+    width: 35% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */

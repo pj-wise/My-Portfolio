@@ -29,13 +29,14 @@ function projectComp(data) {
   const cardTitle = document.createElement("h5");
   cardTitle.textContent = data.name;
 
-  const cardInfo = document.createElement("p");
-  cardInfo.classList.add("card-text");
-  cardInfo.textContent = data.info;
+  const cardLang = document.createElement("p");
+  cardLang.classList.add("card-text", "card-lang");
+  cardLang.textContent = data.languages;
 
   projectCard.appendChild(cardImg);
   projectCard.appendChild(cardBody);
   cardBody.appendChild(cardTitle);
+  cardBody.appendChild(cardLang);
 
   return projectCard;
 }

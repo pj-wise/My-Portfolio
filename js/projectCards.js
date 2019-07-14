@@ -5,9 +5,10 @@ const projectInfo = [
 ];
 
 const projectSection = document.querySelector(".projects");
+console.log(document.querySelector(".projects"));
 
 projectInfo.forEach(data => {
-  projectSection.appendChild(projectComp(projectCard));
+  projectSection.appendChild(projectComp(data));
 });
 
 function projectComp(data) {

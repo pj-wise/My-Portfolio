@@ -1,0 +1,167 @@
+html,
+body {
+  scroll-behavior: smooth;
+
+  .allContent {
+    font-family: "Architects Daughter", cursive;
+  }
+}
+
+.navbar.scrolled {
+  border-bottom   : 2px solid #76a7bc;
+  background-color: #f2faff !important;
+  transition      : background-color 200ms linear;
+  width           : 100%;
+}
+
+nav {
+  .navLogo {
+    width: 110px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+
+    a:link {
+      font-weight: 700;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .dropdown-item {
+      color: #f2faff;
+    }
+  }
+}
+
+.header {
+  height          : 100vh;
+  justify-content : center;
+  text-align      : center;
+  background-image: url("../imgs/headerBack.jpeg");
+  background-size : cover;
+  border-bottom   : 4px solid #6ecddd;
+
+  .headerContent {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    padding        : 15em 1em;
+
+    .learnBtn button {
+      margin          : 4em 0;
+      font-weight     : 500;
+      background-color: rgba(255, 255, 255, 0.3);
+      border          : 1px solid black;
+    }
+  }
+}
+
+.mainContent {
+  border-top     : 3px solid #0872ba;
+  border-bottom  : 3px solid #0872ba;
+  padding        : 1em 1em;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  text-align     : center;
+
+  .about {
+    border-bottom : 2px solid #6ecddd;
+    padding-bottom: 2em;
+
+    h2,
+    h4 {
+      font-weight: 600;
+    }
+
+    h4 {
+      margin-top: 1em;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .calendarCont {
+      width : 85%;
+      margin: 1em auto 0 auto;
+
+      .calendar {
+        width: 100%;
+      }
+    }
+
+    .know1 {
+      margin-top     : 2em;
+      display        : flex;
+      justify-content: space-evenly;
+
+      p {
+        font-weight: 600;
+      }
+
+      .icon {
+        img {
+          width: 70px;
+        }
+      }
+    }
+
+    .know2 {
+      margin-top     : 1em;
+      display        : flex;
+      justify-content: space-evenly;
+
+      p {
+        font-weight: 600;
+      }
+
+      .icon {
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+
+  .projects {
+    margin         : 2em 0;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 375px) {
+  .header {
+    h1 {
+      font-size  : 2.7em;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  .about {
+    .know1 {
+      .icon {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .know2 {
+      .icon {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

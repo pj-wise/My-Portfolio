@@ -28,6 +28,10 @@ nav .navbar-nav .nav-item a:link {
   font-weight: 700;
 }
 
+nav .navbar-collapse {
+  background-color: #f2faff;
+}
+
 nav .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -41,6 +45,8 @@ nav .dropdown-menu .dropdown-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   background-image: url("../imgs/headerBack.jpeg");
   background-size: cover;
@@ -61,11 +67,18 @@ nav .dropdown-menu .dropdown-item {
   padding: 16em 1em;
 }
 
-.header .headerContent .learnBtn button {
-  margin: 4em 0;
+.header .headerContent .learnBtn {
+  width: 8em;
+  margin: 4em auto;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid black;
+}
+
+.header .headerContent .learnBtn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
 }
 
 .mainContent {
@@ -110,6 +123,7 @@ nav .dropdown-menu .dropdown-item {
 
 .mainContent .about .calendarCont .calendar {
   width: 100%;
+  margin: 1em 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -232,7 +246,7 @@ nav .dropdown-menu .dropdown-item {
     font-size: 3em;
     font-weight: 300;
   }
-  .header .learnBtn button {
+  .header .learnBtn {
     margin: 4em 0;
     font-size: 1.5em;
     font-weight: 500;

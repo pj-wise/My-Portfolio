@@ -164,7 +164,7 @@ nav .dropdown-menu .dropdown-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 3px solid #0872ba;
+  border-bottom: 2px solid #0872ba;
 }
 
 .mainContent .projects h2 {
@@ -219,8 +219,81 @@ nav .dropdown-menu .dropdown-item {
   margin-left: 0.5em;
 }
 
-.mainContent .contact h2 {
+.mainContent #contact {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContent #contact h2 {
   font-weight: 600;
+}
+
+.mainContent #contact .contact-page {
+  padding: 1em 0;
+  background: #eee;
+  margin-top: -10px;
+}
+
+.mainContent #contact .contact-page .contact-form .form-group label {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mainContent #contact .form-group .form-control {
+  padding: 7px 12px;
+  border-color: #f2f2f2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+}
+
+.mainContent #contact textarea#message {
+  resize: none;
+  padding: 10px;
+}
+
+.mainContent #contact .contact-page .contact-wrap {
+  margin-top: 20px;
+}
+
+.mainContent #contact .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.mainContent #contact #sendmessage {
+  color: green;
+  border: 1px solid green;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.mainContent #contact #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.mainContent #contact #sendmessage.show,
+.mainContent #contact #errormessage.show,
+.mainContent #contact .show {
+  display: block;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 375px) {

@@ -8,10 +8,10 @@ body {
 }
 
 .navbar.scrolled {
-  border-bottom   : 2px solid #76a7bc;
+  border-bottom: 2px solid #76a7bc;
   background-color: #f2faff !important;
-  transition      : background-color 200ms linear;
-  width           : 100%;
+  transition: background-color 200ms linear;
+  width: 100%;
 }
 
 nav {
@@ -27,12 +27,8 @@ nav {
     }
   }
 
-  .navbar-collapse {
-    background-color: #f2faff;
-  }
-
   .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 
     .dropdown-item {
       color: #f2faff;
@@ -41,48 +37,55 @@ nav {
 }
 
 .header {
-  height          : 100vh;
-  justify-content : center;
-  align-content   : center;
-  text-align      : center;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   background-image: url("../imgs/headerBack.jpeg");
-  background-size : cover;
-  border-bottom   : 4px solid #6ecddd;
+  background-size: cover;
+  border-bottom: 4px solid #6ecddd;
 
   .headerContent {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    flex-direction : column;
-    padding        : 16em 1em;
+    flex-direction: column;
+    padding: 16em 1em;
 
     .learnBtn {
-      width           : 8em;
-      margin          : 4em auto;
-      font-weight     : 500;
+      width: 8em;
+      margin: 4em auto;
+      font-weight: 500;
       background-color: rgba(255, 255, 255, 0.3);
-      border          : 1px solid black;
+      border: 1px solid black;
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.3);
-        color           : white;
-        cursor          : pointer;
+        color: white;
+        cursor: pointer;
       }
     }
   }
 }
 
 .mainContent {
-  border-top     : 3px solid #0872ba;
-  border-bottom  : 3px solid #0872ba;
-  padding        : 1em 1em;
-  display        : flex;
-  flex-wrap      : wrap;
+  border-top: 3px solid #0872ba;
+  border-bottom: 3px solid #0872ba;
+  padding: 1em 1em;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align     : center;
-  background     : linear-gradient(to bottom, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 1) 15%, rgba(232, 232, 232, 1) 36%, rgba(151, 226, 237, 1) 65%, rgba(110, 205, 221, 1) 100%);
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(245, 245, 245, 1) 15%,
+    rgba(232, 232, 232, 1) 36%,
+    rgba(151, 226, 237, 1) 65%,
+    rgba(110, 205, 221, 1) 100%
+  );
 
   .about {
-    border-bottom : 2px solid #6ecddd;
+    border-bottom: 2px solid #6ecddd;
     padding-bottom: 2em;
 
     h2,
@@ -99,19 +102,19 @@ nav {
     }
 
     .calendarCont {
-      width : 90%;
+      width: 90%;
       margin: 1em auto 0 auto;
 
       .calendar {
-        width           : 100%;
-        margin          : 1em 0;
+        width: 100%;
+        margin: 1em 0;
         background-color: rgba(255, 255, 255, 0.8);
       }
     }
 
     .know1 {
-      margin-top     : 2em;
-      display        : flex;
+      margin-top: 2em;
+      display: flex;
       justify-content: space-evenly;
 
       p {
@@ -126,8 +129,8 @@ nav {
     }
 
     .know2 {
-      margin-top     : 1em;
-      display        : flex;
+      margin-top: 1em;
+      display: flex;
       justify-content: space-evenly;
 
       p {
@@ -143,25 +146,25 @@ nav {
   }
 
   .projects {
-    margin         : 1.5em 0 0 0;
+    margin: 1.5em 0 0 0;
     justify-content: center;
 
     h2 {
       margin-bottom: 1em;
-      font-weight  : 600;
+      font-weight: 600;
     }
 
     .cardContainer {
-      display  : flex;
+      display: flex;
       flex-wrap: wrap;
-      width    : 100%;
+      width: 100%;
 
       .card {
-        background-color  : rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 1);
         -webkit-box-shadow: 5px 5px 8px 2px #5874d0;
-        box-shadow        : 5px 5px 8px 2px #5874d0;
-        width             : 100%;
-        margin-bottom     : 1.5em;
+        box-shadow: 5px 5px 8px 2px #5874d0;
+        width: 100%;
+        margin-bottom: 1.5em;
 
         .card-body {
           .card-title {
@@ -173,7 +176,7 @@ nav {
           }
 
           .btn-container {
-            display        : flex;
+            display: flex;
             justify-content: center;
 
             .btn {
@@ -186,7 +189,6 @@ nav {
               &:last-child {
                 margin-left: 0.5em;
               }
-
             }
           }
         }
@@ -195,10 +197,18 @@ nav {
   }
 }
 
+@media only screen and (max-width: 768px) and (min-width: 375px) {
+  nav {
+    .navbar-collapse {
+      background-color: #f2faff !important;
+    }
+  }
+}
+
 @media (min-width: 375px) {
   .header {
     h1 {
-      font-size  : 2.7em;
+      font-size: 2.7em;
       font-weight: 600;
     }
 
@@ -229,21 +239,21 @@ nav {
 @media (min-width: 768px) {
   .header {
     h1 {
-      font-size  : 4em;
+      font-size: 4em;
       font-weight: 600;
     }
 
     h2 {
-      font-size  : 3em;
+      font-size: 3em;
       font-weight: 300;
     }
 
     .learnBtn {
-      margin          : 4em 0;
-      font-size       : 1.5em;
-      font-weight     : 500;
+      margin: 4em 0;
+      font-size: 1.5em;
+      font-weight: 500;
       background-color: rgba(255, 255, 255, 0.3);
-      border          : 1px solid black;
+      border: 1px solid black;
     }
   }
 

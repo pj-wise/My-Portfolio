@@ -160,10 +160,11 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent .projects {
-  margin: 1.5em 0 0 0;
+  margin: 2em 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 3px solid #0872ba;
 }
 
 .mainContent .projects h2 {
@@ -178,10 +179,11 @@ nav .dropdown-menu .dropdown-item {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 .mainContent .projects .cardContainer .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 5px 5px 8px 2px #5874d0;
   box-shadow: 5px 5px 8px 2px #5874d0;
   width: 100%;
@@ -215,6 +217,10 @@ nav .dropdown-menu .dropdown-item {
 
 .mainContent .projects .cardContainer .card .card-body .btn-container .btn:last-child {
   margin-left: 0.5em;
+}
+
+.mainContent .contact h2 {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 375px) {

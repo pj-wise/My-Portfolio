@@ -235,8 +235,12 @@ nav .dropdown-menu .dropdown-item {
 
 .mainContent #contact .contact-page {
   padding: 1em 0;
-  background: #eee;
-  margin-top: -10px;
+  margin: 0 auto;
+}
+
+.mainContent #contact .contact-page .container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .mainContent #contact .contact-page .contact-form .form-group label {
@@ -246,8 +250,7 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent #contact .form-group .form-control {
-  padding: 7px 12px;
-  border-color: #f2f2f2;
+  border-color: #4e4e4e;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
@@ -256,10 +259,6 @@ nav .dropdown-menu .dropdown-item {
 .mainContent #contact textarea#message {
   resize: none;
   padding: 10px;
-}
-
-.mainContent #contact .contact-page .contact-wrap {
-  margin-top: 20px;
 }
 
 .mainContent #contact .validation {
@@ -347,6 +346,22 @@ nav .dropdown-menu .dropdown-item {
   }
   .projects .cardContainer .card {
     width: 30% !important;
+  }
+  #contact .contact-page {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contact .contact-page .contact-wrap {
+    margin: 0 auto;
+  }
+  #contact .contact-page .contact-wrap .contactForm {
+    min-width: 100%;
+    margin: 0 auto !important;
   }
 }
 /*# sourceMappingURL=index.css.map */

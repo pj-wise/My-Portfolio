@@ -31,7 +31,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.3);
 
     .dropdown-item {
-      color: #f2faff;
+      color: black;
     }
   }
 }
@@ -148,7 +148,7 @@ nav {
   .projects {
     margin: 2em 0;
     justify-content: center;
-    border-bottom: 3px solid #0872ba;
+    border-bottom: 2px solid #0872ba;
     h2 {
       margin-bottom: 1em;
       font-weight: 600;
@@ -197,9 +197,72 @@ nav {
     }
   }
 
-  .contact {
+  #contact {
+    width: 100%;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: center;
     h2 {
       font-weight: 600;
+    }
+    .contact-page {
+      padding: 1em 0;
+      margin: 0 auto;
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .contact-page .contact-form .form-group label {
+      color: #4e4e4e;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .form-group .form-control {
+      border-color: #4e4e4e;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    textarea#message {
+      resize: none;
+      padding: 10px;
+    }
+
+    .validation {
+      color: red;
+      display: none;
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    #sendmessage {
+      color: green;
+      border: 1px solid green;
+      display: none;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    #errormessage {
+      color: red;
+      display: none;
+      border: 1px solid red;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    #sendmessage.show,
+    #errormessage.show,
+    .show {
+      display: block;
     }
   }
 }
@@ -288,6 +351,21 @@ nav {
 
       .card {
         width: 30% !important;
+      }
+    }
+  }
+
+  #contact {
+    .contact-page {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .contact-wrap {
+        margin: 0 auto;
+        .contactForm {
+          min-width: 100%;
+          margin: 0 auto !important;
+        }
       }
     }
   }

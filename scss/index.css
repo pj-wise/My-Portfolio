@@ -28,12 +28,8 @@ nav .navbar-nav .nav-item a:link {
   font-weight: 700;
 }
 
-nav .navbar-collapse {
-  background-color: #f2faff;
-}
-
 nav .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 nav .dropdown-menu .dropdown-item {
@@ -219,6 +215,12 @@ nav .dropdown-menu .dropdown-item {
 
 .mainContent .projects .cardContainer .card .card-body .btn-container .btn:last-child {
   margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 375px) {
+  nav .navbar-collapse {
+    background-color: #f2faff !important;
+  }
 }
 
 @media (min-width: 375px) {

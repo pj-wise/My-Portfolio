@@ -361,7 +361,28 @@ nav .dropdown-menu .dropdown-item {
   }
   #contact .contact-page .contact-wrap .contactForm {
     min-width: 100%;
+    background-color: #d7e0e9;
+    border: 1px solid #bdbdbd;
+    padding: 1.5em;
+    border-radius: 10px;
     margin: 0 auto !important;
+  }
+  #contact .contact-page .contact-wrap .contactForm input,
+  #contact .contact-page .contact-wrap .contactForm textarea {
+    background-color: #fbfbfb;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 3px 4px 1px #000;
+    box-shadow: 1px 3px 4px 1px #757575;
+  }
+  #contact .contact-page .contact-wrap .contactForm button {
+    background-color: #5874d0;
+  }
+  #contact .contact-page .contact-wrap .contactForm button:hover {
+    background-color: #fbfbfb;
+    color: #757575;
+    -webkit-box-shadow: 2px 3px 4px 1px #5874d0;
+    box-shadow: 3px 5px 8px 2px #5874d0;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -29,7 +29,7 @@ nav .navbar-nav .nav-item a:link {
 }
 
 nav .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 nav .dropdown-menu .dropdown-item {
@@ -109,7 +109,7 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent .about p {
-  font-size: 18px;
+  font-size: 1.3em;
 }
 
 .mainContent .about .calendarCont {
@@ -361,7 +361,26 @@ nav .dropdown-menu .dropdown-item {
   }
   #contact .contact-page .contact-wrap .contactForm {
     min-width: 100%;
+    background-color: #d7e0e9;
+    border: 1px solid #bdbdbd;
+    padding: 1.5em;
+    border-radius: 10px;
     margin: 0 auto !important;
+  }
+  #contact .contact-page .contact-wrap .contactForm input,
+  #contact .contact-page .contact-wrap .contactForm textarea {
+    background-color: #fbfbfb;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  #contact .contact-page .contact-wrap .contactForm button {
+    background-color: #5874d0;
+  }
+  #contact .contact-page .contact-wrap .contactForm button:hover {
+    background-color: #fbfbfb;
+    color: #5874d0;
+    -webkit-box-shadow: 2px 3px 4px 1px #5874d0;
+    box-shadow: 3px 5px 8px 2px #5874d0;
   }
 }
 /*# sourceMappingURL=index.css.map */

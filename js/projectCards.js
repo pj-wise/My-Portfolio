@@ -11,15 +11,12 @@ const projectInfo = [
       "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
   },
   {
-    name: "Use My Tech Stuff",
-    img: "../imgs/umts-screen.png",
-    languages: "HTML, CSS, JS",
-    info:
-      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
-    siteLink:
-      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
-    codeLink:
-      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
+    name: "DryMasterFL",
+    img: "../imgs/dmresto.png",
+    languages: "HTML, CSS, JS, Bootstrap",
+    info: `A recent freelance website made for a local business, client wanted to incorporate the use of a Bootstrap template. (code private per clients request)`,
+    siteLink: "https://drymasterfl.com",
+    codeLink: "#"
   },
   {
     name: "Use My Tech Stuff",

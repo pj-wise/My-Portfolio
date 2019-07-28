@@ -19,13 +19,12 @@ const projectInfo = [
     codeLink: "#"
   },
   {
-    name: "Use My Tech Stuff",
-    img: "../imgs/umts-screen.png",
-    languages: "HTML, CSS, JS",
+    name: "My Portfolio",
+    img: "../imgs/myPort.png",
+    languages: "HTML, CSS, PHP, JS",
     info:
-      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
-    siteLink:
-      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
+      "This is the site you're currently viewing! Aside from the contact form, everything on this page is made from scratch. Hope you're emjoying it and thank you for visiting!",
+    siteLink: "#projects",
     codeLink:
       "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
   }

@@ -25,8 +25,7 @@ const projectInfo = [
     info:
       "This is the site you're currently viewing! Aside from the contact form, everything on this page is made from scratch. Hope you're emjoying it and thank you for visiting!",
     siteLink: "#projects",
-    codeLink:
-      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
+    codeLink: "https://github.com/pj-wise/My-Portfolio/blob/master/index.html"
   }
 ];
 

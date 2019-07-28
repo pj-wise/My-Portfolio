@@ -356,6 +356,41 @@ footer .footerContainer .footerLinks a:hover {
   nav .navbar-collapse {
     background-color: #f2faff !important;
   }
+  contact .contact-page {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  contact .contact-page .contact-wrap {
+    margin: 0 auto;
+  }
+  contact .contact-page .contact-wrap .contactForm {
+    min-width: 100%;
+    background-color: #d7e0e9;
+    border: 1px solid #bdbdbd;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0 auto !important;
+  }
+  contact .contact-page .contact-wrap .contactForm input,
+  contact .contact-page .contact-wrap .contactForm textarea {
+    background-color: #fbfbfb;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  contact .contact-page .contact-wrap .contactForm button {
+    background-color: #5874d0;
+  }
+  contact .contact-page .contact-wrap .contactForm button:hover {
+    background-color: #fbfbfb;
+    color: #5874d0;
+    -webkit-box-shadow: 2px 3px 4px 1px #5874d0;
+    box-shadow: 3px 5px 8px 2px #5874d0;
+  }
   footer .footerContainer .copyright {
     font-size: 0.9em;
     width: 30%;
@@ -379,38 +414,6 @@ footer .footerContainer .footerLinks a:hover {
   }
   .about .know2 .icon p {
     font-size: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  .header h1 {
-    font-size: 4em;
-    font-weight: 600;
-  }
-  .header h2 {
-    font-size: 3em;
-    font-weight: 300;
-  }
-  .header .learnBtn {
-    margin: 4em 0;
-    font-size: 1.5em;
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid black;
-  }
-  .about .know1 .icon p {
-    font-size: 18px;
-  }
-  .about .know2 .icon p {
-    font-size: 18px;
-  }
-  .projects .cardContainer {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .projects .cardContainer .card {
-    width: 30% !important;
   }
   #contact .contact-page {
     width: 100%;
@@ -446,6 +449,38 @@ footer .footerContainer .footerLinks a:hover {
     color: #5874d0;
     -webkit-box-shadow: 2px 3px 4px 1px #5874d0;
     box-shadow: 3px 5px 8px 2px #5874d0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 4em;
+    font-weight: 600;
+  }
+  .header h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .header .learnBtn {
+    margin: 4em 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid black;
+  }
+  .about .know1 .icon p {
+    font-size: 18px;
+  }
+  .about .know2 .icon p {
+    font-size: 18px;
+  }
+  .projects .cardContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projects .cardContainer .card {
+    width: 30% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */

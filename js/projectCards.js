@@ -16,7 +16,7 @@ const projectInfo = [
     languages: "HTML, CSS, JS, Bootstrap",
     info: `A recent freelance website made for a local business, client wanted to incorporate the use of a Bootstrap template. (code private per clients request)`,
     siteLink: "https://drymasterfl.com",
-    codeLink: "#"
+    codeLink: "#projects"
   },
   {
     name: "My Portfolio",

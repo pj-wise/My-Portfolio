@@ -264,6 +264,57 @@ nav {
     .show {
       display: block;
     }
+
+    a:link,
+    a:active,
+    a:visited {
+      color: black;
+      letter-spacing: 0.1em;
+    }
+    a:hover {
+      color: #747474;
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  background-color: #536f74;
+  text-align: center;
+  padding: 0.5em;
+  // border-top: 2px solid #74cfdf;
+  width: 100%;
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .copyright {
+      width: 50%;
+      margin: auto 0;
+      font-size: 1em;
+      color: white;
+      a:hover {
+        color: #6ecddd;
+        text-decoration: none;
+      }
+    }
+    .footerLinks {
+      width: 40%;
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+
+      a:link,
+      a:visited,
+      a:active {
+        color: white;
+      }
+
+      a:hover {
+        color: #6ecddd;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -271,6 +322,18 @@ nav {
   nav {
     .navbar-collapse {
       background-color: #f2faff !important;
+    }
+  }
+  footer {
+    .footerContainer {
+      .copyright {
+        font-size: 0.9em;
+        width: 30%;
+      }
+      .footerLinks {
+        font-size: 0.9em;
+        width: 70%;
+      }
     }
   }
 }

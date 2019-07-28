@@ -29,7 +29,7 @@ nav .navbar-nav .nav-item a:link {
 }
 
 nav .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 nav .dropdown-menu .dropdown-item {
@@ -295,9 +295,74 @@ nav .dropdown-menu .dropdown-item {
   display: block;
 }
 
+.mainContent #contact a:link,
+.mainContent #contact a:active,
+.mainContent #contact a:visited {
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+.mainContent #contact a:hover {
+  color: #747474;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #536f74;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footerContainer .copyright {
+  width: 50%;
+  margin: auto 0;
+  font-size: 1em;
+  color: white;
+}
+
+footer .footerContainer .copyright a:hover {
+  color: #6ecddd;
+  text-decoration: none;
+}
+
+footer .footerContainer .footerLinks {
+  width: 40%;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footerContainer .footerLinks a:link,
+footer .footerContainer .footerLinks a:visited,
+footer .footerContainer .footerLinks a:active {
+  color: white;
+}
+
+footer .footerContainer .footerLinks a:hover {
+  color: #6ecddd;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 375px) {
   nav .navbar-collapse {
     background-color: #f2faff !important;
+  }
+  footer .footerContainer .copyright {
+    font-size: 0.9em;
+    width: 30%;
+  }
+  footer .footerContainer .footerLinks {
+    font-size: 0.9em;
+    width: 70%;
   }
 }
 

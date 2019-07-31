@@ -1,7 +1,7 @@
 const projectInfo = [
   {
     name: "Use My Tech Stuff",
-    img: "../imgs/umts-screen.png",
+    img: "/imgs/umts-screen.jpeg",
     languages: "HTML, CSS, JS",
     info:
       "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
@@ -12,7 +12,7 @@ const projectInfo = [
   },
   {
     name: "DryMasterFL",
-    img: "../imgs/dmresto.png",
+    img: "/imgs/dmresto.png",
     languages: "HTML, CSS, JS, Bootstrap",
     info: `A recent freelance website made for a local business, client wanted to incorporate the use of a Bootstrap template. (code private per clients request)`,
     siteLink: "https://drymasterfl.com",
@@ -20,7 +20,7 @@ const projectInfo = [
   },
   {
     name: "My Portfolio",
-    img: "../imgs/myPort.png",
+    img: "/imgs/myPort.jpeg",
     languages: "HTML, CSS, PHP, JS",
     info:
       "This is the site you're currently viewing! Aside from the contact form, everything on this page is made from scratch. Hope you're enjoying it and thank you for visiting!",

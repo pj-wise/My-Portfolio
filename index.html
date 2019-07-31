@@ -11,10 +11,10 @@
     />
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
+      async
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
     ></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,8 +22,8 @@
       crossorigin="anonymous"
     />
 
-    <script src="js/navbar.js" async></script>
-    <script src="js/projectCards.js" async></script>
+    <script async src="js/navbar.js" async></script>
+    <script async src="js/projectCards.js" async></script>
 
     <title>PJ Wise: Web Developer</title>
   </head>
@@ -99,7 +99,11 @@
                   <a class="dropdown-item" href="https://github.com/pj-wise"
                     >GITHUB</a
                   >
-                  <a class="dropdown-item" href="#">LINKEDIN</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/pearl-jamie-wise-104060188/"
+                    >LINKEDIN</a
+                  >
                 </div>
               </li>
             </ul>
@@ -197,16 +201,16 @@
           <h2>CONTACT</h2>
           <h4><a href="mailto:pjwisedev@gmail.com">pjwisedev@gmail.com</a></h4>
           <h4><a href="tel:8478099721"> (847) 809-9721</a></h4>
+          <div id="sendmessage">
+            Your message has been sent. Thank you!
+          </div>
+          <div id="errormessage"></div>
           <div class="contact-page">
             <div class="container">
               <div class="row contact-wrap">
                 <div class="col-lg">
-                  <div id="sendmessage">
-                    Your message has been sent. Thank you!
-                  </div>
-                  <div id="errormessage"></div>
                   <form
-                    action="./contactform/contactform.js"
+                    action="./contactform/contactform.php"
                     method="post"
                     role="form"
                     class="contactForm"

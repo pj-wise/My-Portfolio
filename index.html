@@ -15,6 +15,12 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
     ></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -110,10 +116,21 @@
           </div>
         </nav>
         <div class="headerContent">
-          <div class="name"><h1>Pearl Jamie Wise</h1></div>
-          <div class="title"><h2>Web Developer</h2></div>
+          <div class="name animated fadeInDown">
+            <h1>Pearl Jamie Wise</h1>
+          </div>
+          <div class="title animated fadeIn delay-1s">
+            <h2>Web Developer</h2>
+          </div>
 
-          <a href="#toContent" class="learnBtn btn btn-light">Learn More</a>
+          <a
+            href="#toContent"
+            class="learnBtn btn btn-light"
+            data-aos="fadeIn"
+            data-aos-duration="1600"
+            data-aos-delay="1500"
+            >Learn More</a
+          >
         </div>
         <div id="toContent"></div>
       </div>
@@ -131,54 +148,58 @@
 
           <h4>WHAT I KNOW</h4>
           <div class="know1">
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="200">
               <img src="imgs/html-icon.png" />
               <p>HTML</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="200">
               <img src="imgs/css-icon.png" />
               <p>CSS</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="200">
               <img src="imgs/sass-icn.png" />
               <p>SASS</p>
             </div>
           </div>
           <div class="know2">
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="300">
               <img src="imgs/boot-icon.png" />
               <p>BOOTSTRAP</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="300">
               <img src="imgs/photoshop-icon.png" />
               <p>PHOTOSHOP</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="300">
+              <img src="imgs/react-icon.png" />
+              <p>REACT</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-delay="300">
               <img src="imgs/js-icon.png" />
               <p>JAVASCRIPT</p>
             </div>
           </div>
           <h4>WHAT I AM LEARNING</h4>
           <div class="know1">
-            <div class="icon">
-              <img src="imgs/react-icon.png" />
-              <p>REACT</p>
-            </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="400">
               <img src="imgs/node-icon.png" />
               <p>NODE</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="400">
+              <img src="imgs/angular-512.png" />
+              <p>ANGULAR</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-delay="400">
               <img src="imgs/php-icon.png" />
               <p>PHP</p>
             </div>
           </div>
           <div class="know2">
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="500">
               <img src="imgs/java-icon.png" />
               <p>JAVA</p>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-up" data-aos-delay="500">
               <img src="imgs/python-icon.png" />
               <p>PYTHON</p>
             </div>
@@ -320,5 +341,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

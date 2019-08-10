@@ -19,13 +19,13 @@ const projectInfo = [
     codeLink: "#projects"
   },
   {
-    name: "My Portfolio",
-    img: "/imgs/myPort.jpeg",
-    languages: "HTML, CSS, PHP, JS",
+    name: "GitHub Finder",
+    img: "/imgs/gitFinder-screen.jpeg",
+    languages: "React, JS, CSS",
     info:
-      "This is the site you're currently viewing! Aside from the contact form, everything on this page is made from scratch. Hope you're enjoying it and thank you for visiting!",
-    siteLink: "#projects",
-    codeLink: "https://github.com/pj-wise/My-Portfolio/blob/master/index.html"
+      "Practice project using React.js. Site incorporates the use of GitHub's API and allows you to search their user database",
+    siteLink: "https://jolly-easley-3598bf.netlify.com/",
+    codeLink: "https://github.com/pj-wise/github-finder/blob/master/src/App.js"
   }
 ];
 

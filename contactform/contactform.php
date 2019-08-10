@@ -20,13 +20,13 @@
   $contact_error_name = "Name is too short or empty!";
   $contact_error_email = "Please enter a valid email!";
   $contact_error_subject = "Subject is too short or empty!";
-  $contact_error_message = "Message is too short! Please enter something.";
+  $contact_error_message = "Too short message! Please enter something.";
 
 /********** Do not edit from the below line ***********/
 
-  if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    die('Sorry Request must be Ajax POST');
-  }
+  // if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+  //   die('Sorry Request must be Ajax POST');
+  // }
 
   if(isset($_POST)) {
 

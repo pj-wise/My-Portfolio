@@ -220,13 +220,8 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent #contact {
-  width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto 3em;
+  width: 70%;
 }
 
 .mainContent #contact h2 {
@@ -234,23 +229,18 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent #contact .contact-page {
-  padding: 1em 0;
-  margin: 0 auto;
-}
-
-.mainContent #contact .contact-page .container {
-  width: 100%;
-  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .mainContent #contact .contact-page .contact-form .form-group label {
-  color: #4e4e4e;
+  color: #4E4E4E;
   font-size: 16px;
   font-weight: 300;
 }
 
 .mainContent #contact .form-group .form-control {
-  border-color: #4e4e4e;
+  padding: 7px 12px;
+  border-color: #f2f2f2;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
@@ -259,6 +249,10 @@ nav .dropdown-menu .dropdown-item {
 .mainContent #contact textarea#message {
   resize: none;
   padding: 10px;
+}
+
+.mainContent #contact .contact-page .contact-wrap {
+  margin-top: 20px;
 }
 
 .mainContent #contact .validation {
@@ -274,7 +268,7 @@ nav .dropdown-menu .dropdown-item {
   border: 1px solid green;
   display: none;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -284,7 +278,7 @@ nav .dropdown-menu .dropdown-item {
   display: none;
   border: 1px solid red;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -293,18 +287,6 @@ nav .dropdown-menu .dropdown-item {
 .mainContent #contact #errormessage.show,
 .mainContent #contact .show {
   display: block;
-}
-
-.mainContent #contact a:link,
-.mainContent #contact a:active,
-.mainContent #contact a:visited {
-  color: black;
-  letter-spacing: 0.1em;
-}
-
-.mainContent #contact a:hover {
-  color: #747474;
-  text-decoration: none;
 }
 
 footer {
@@ -356,7 +338,10 @@ footer .footerContainer .footerLinks a:hover {
   nav .navbar-collapse {
     background-color: #f2faff !important;
   }
-  contact .contact-page {
+  #contact {
+    height: 40vh;
+  }
+  #contact .contact-page {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,10 +350,10 @@ footer .footerContainer .footerLinks a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  contact .contact-page .contact-wrap {
+  #contact .contact-page .contact-wrap {
     margin: 0 auto;
   }
-  contact .contact-page .contact-wrap .contactForm {
+  #contact .contact-page .contact-wrap .contactForm {
     min-width: 100%;
     background-color: #d7e0e9;
     border: 1px solid #bdbdbd;
@@ -376,16 +361,16 @@ footer .footerContainer .footerLinks a:hover {
     border-radius: 10px;
     margin: 0 auto !important;
   }
-  contact .contact-page .contact-wrap .contactForm input,
-  contact .contact-page .contact-wrap .contactForm textarea {
+  #contact .contact-page .contact-wrap .contactForm input,
+  #contact .contact-page .contact-wrap .contactForm textarea {
     background-color: #fbfbfb;
     border: 2px solid #bdbdbd;
     border-radius: 5px;
   }
-  contact .contact-page .contact-wrap .contactForm button {
+  #contact .contact-page .contact-wrap .contactForm button {
     background-color: #5874d0;
   }
-  contact .contact-page .contact-wrap .contactForm button:hover {
+  #contact .contact-page .contact-wrap .contactForm button:hover {
     background-color: #fbfbfb;
     color: #5874d0;
     -webkit-box-shadow: 2px 3px 4px 1px #5874d0;

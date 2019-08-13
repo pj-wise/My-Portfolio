@@ -197,33 +197,26 @@ nav {
   }
 
   #contact {
-    width          : 100%;
-    align-content  : center;
-    margin         : 0 auto;
-    justify-content: center;
+    margin: 0 auto 3em;
+    width : 70%;
 
     h2 {
       font-weight: 600;
     }
 
     .contact-page {
-      padding: 1em 0;
-      margin : 0 auto;
-
-      .container {
-        width : 100%;
-        margin: 0 auto;
-      }
+      padding-top: 20px;
     }
 
     .contact-page .contact-form .form-group label {
-      color      : #4e4e4e;
+      color      : #4E4E4E;
       font-size  : 16px;
       font-weight: 300;
     }
 
     .form-group .form-control {
-      border-color : #4e4e4e;
+      padding      : 7px 12px;
+      border-color : #f2f2f2;
       box-shadow   : none;
       border-radius: 0;
     }
@@ -231,6 +224,10 @@ nav {
     textarea#message {
       resize : none;
       padding: 10px;
+    }
+
+    .contact-page .contact-wrap {
+      margin-top: 20px;
     }
 
     .validation {
@@ -246,7 +243,7 @@ nav {
       border       : 1px solid green;
       display      : none;
       text-align   : center;
-      padding      : 15px;
+      padding      : 5px;
       font-weight  : 600;
       margin-bottom: 15px;
     }
@@ -256,7 +253,7 @@ nav {
       display      : none;
       border       : 1px solid red;
       text-align   : center;
-      padding      : 15px;
+      padding      : 5px;
       font-weight  : 600;
       margin-bottom: 15px;
     }
@@ -265,18 +262,6 @@ nav {
     #errormessage.show,
     .show {
       display: block;
-    }
-
-    a:link,
-    a:active,
-    a:visited {
-      color         : black;
-      letter-spacing: 0.1em;
-    }
-
-    a:hover {
-      color          : #747474;
-      text-decoration: none;
     }
   }
 }
@@ -331,7 +316,9 @@ footer {
     }
   }
 
-  contact {
+  #contact {
+    height: 40vh;
+
     .contact-page {
       width          : 100%;
       display        : flex;

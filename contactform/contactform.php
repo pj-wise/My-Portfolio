@@ -11,7 +11,7 @@
   $contact_email_to = "pjwisedev@gmail.com";
 
   // Title prefixes
-  $subject_title = "Contact Form Message:";
+  $subject_title = "WiseDevelopment Contact:";
   $name_title = "Name:";
   $email_title = "Email:";
   $message_title = "Message:";
@@ -24,9 +24,9 @@
 
 /********** Do not edit from the below line ***********/
 
-  // if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-  //   die('Sorry Request must be Ajax POST');
-  // }
+  if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+    die('Sorry Request must be Ajax POST');
+  }
 
   if(isset($_POST)) {
 

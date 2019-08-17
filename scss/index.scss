@@ -197,11 +197,12 @@ nav {
   }
 
   #contact {
-    margin: 0 auto 3em;
-    width : 70%;
+    margin: -2em auto 3em;
+    width : 100%;
 
     h2 {
       font-weight: 600;
+      margin-top : 1em;
     }
 
     .contact-page {
@@ -224,10 +225,6 @@ nav {
     textarea#message {
       resize : none;
       padding: 10px;
-    }
-
-    .contact-page .contact-wrap {
-      margin-top: 20px;
     }
 
     .validation {
@@ -317,7 +314,6 @@ footer {
   }
 
   #contact {
-    height: 40vh;
 
     .contact-page {
       width          : 100%;

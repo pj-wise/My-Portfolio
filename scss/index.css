@@ -220,12 +220,13 @@ nav .dropdown-menu .dropdown-item {
 }
 
 .mainContent #contact {
-  margin: 0 auto 3em;
-  width: 70%;
+  margin: -2em auto 3em;
+  width: 100%;
 }
 
 .mainContent #contact h2 {
   font-weight: 600;
+  margin-top: 1em;
 }
 
 .mainContent #contact .contact-page {
@@ -249,10 +250,6 @@ nav .dropdown-menu .dropdown-item {
 .mainContent #contact textarea#message {
   resize: none;
   padding: 10px;
-}
-
-.mainContent #contact .contact-page .contact-wrap {
-  margin-top: 20px;
 }
 
 .mainContent #contact .validation {
@@ -337,9 +334,6 @@ footer .footerContainer .footerLinks a:hover {
 @media only screen and (max-width: 768px) and (min-width: 375px) {
   nav .navbar-collapse {
     background-color: #f2faff !important;
-  }
-  #contact {
-    height: 40vh;
   }
   #contact .contact-page {
     width: 100%;

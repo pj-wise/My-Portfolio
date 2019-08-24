@@ -28,6 +28,11 @@ nav .navbar-nav .nav-item a:link {
   font-weight: 700;
 }
 
+nav .active {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 nav .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.8);
 }

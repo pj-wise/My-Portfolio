@@ -1,14 +1,22 @@
 const projectInfo = [
   {
-    name: "Use My Tech Stuff",
-    img: "/imgs/umts-screen.jpeg",
-    languages: "HTML, CSS, JS",
+    name: "Nasa Photo of the Day",
+    img: "/imgs/Npotd.jpeg",
+    languages: "React, JS, SCSS",
     info:
-      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
-    siteLink:
-      "https://naughty-feynman-cff292.netlify.com/index.html#scrollPoint",
+      "Small CRA project made with the Nasa API. Pick a date (today's or any previous date) and a new photo with info will be rendered.",
+    siteLink: "https://pensive-leavitt-dd12f9.netlify.com/",
     codeLink:
-      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
+      "https://github.com/pj-wise/nasa-photo-of-the-day/blob/master/src/App.js"
+  },
+  {
+    name: "GitHub Finder",
+    img: "/imgs/gitFinder-screen.jpeg",
+    languages: "React, JS, CSS",
+    info:
+      "Practice project using React.js. Site incorporates the use of GitHub's API and allows you to search their user database",
+    siteLink: "https://jolly-easley-3598bf.netlify.com/",
+    codeLink: "https://github.com/pj-wise/github-finder/blob/master/src/App.js"
   },
   {
     name: "DryMasterFL",
@@ -19,13 +27,14 @@ const projectInfo = [
     codeLink: "#projects"
   },
   {
-    name: "GitHub Finder",
-    img: "/imgs/gitFinder-screen.jpeg",
-    languages: "React, JS, CSS",
+    name: "Use My Tech Stuff",
+    img: "/imgs/umts-screen.jpeg",
+    languages: "HTML, CSS, JS",
     info:
-      "Practice project using React.js. Site incorporates the use of GitHub's API and allows you to search their user database",
-    siteLink: "https://jolly-easley-3598bf.netlify.com/",
-    codeLink: "https://github.com/pj-wise/github-finder/blob/master/src/App.js"
+      "One of my first team projects. Use My Tech Stuff is a tech rental site comparable to how Turo works for cars.",
+    siteLink: "https://naughty-feynman-cff292.netlify.com",
+    codeLink:
+      "https://github.com/use-my-tech-6-24/useMyTech-UI-General/blob/master/index.html"
   }
 ];
 

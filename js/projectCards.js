@@ -5,7 +5,7 @@ const projectInfo = [
     languages: "React, JS, SCSS",
     info:
       "Small CRA project made with the Nasa API. Pick a date (today's or any previous date) and a new photo with info will be rendered.",
-    siteLink: "https://pensive-leavitt-dd12f9.netlify.com/",
+    siteLink: "https://vibrant-bartik-37d5dc.netlify.com/",
     codeLink:
       "https://github.com/pj-wise/nasa-photo-of-the-day/blob/master/src/App.js"
   },
@@ -76,6 +76,7 @@ function projectComp(data) {
   visitBtn.classList.add("btn", "btn-light");
   visitBtn.textContent = "Visit Site";
   visitBtn.href = data.siteLink;
+  visitBtn.target = "_blank";
 
   const codeBtn = document.createElement("a");
   codeBtn.classList.add("btn", "btn-light");

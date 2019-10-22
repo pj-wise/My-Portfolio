@@ -11,7 +11,9 @@
   $contact_email_to = "pjay.wise@gmail.com";
 
   // Title prefixes
-  $subject_title = "PJW Dev Contact Submission:";
+
+  $subject_title = "PJ Wise Development Contact:";
+
   $name_title = "Name:";
   $email_title = "Email:";
   $message_title = "Message:";

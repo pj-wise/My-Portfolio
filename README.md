@@ -2,7 +2,7 @@
 Main repository for my live Portfolio Website
 
 Languages Used: 
-HTML, CSS/SCSS, JavaScript, PHP.
+HTML, CSS/SCSS, JavaScript,jQuery, PHP.
 
 Libraries:
 Very minimal Bootstrap! 

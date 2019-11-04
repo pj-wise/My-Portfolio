@@ -1,5 +1,5 @@
 # My-Portfolio
-Main repository for my Portfolio Website
+Main repository for my live Portfolio Website
 
 Languages Used: 
 HTML, CSS/SCSS, JavaScript, PHP.

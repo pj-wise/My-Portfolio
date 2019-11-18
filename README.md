@@ -1,8 +1,8 @@
 # My-Portfolio
-Main repository for my Portfolio Website
+Main repository for my personal Portfolio Website
 
 Languages Used: 
-HTML, CSS/SCSS, JavaScript,jQuery, PHP.
+HTML, CSS/SCSS, JavaScript, jQuery, PHP.
 
 Libraries:
 Very minimal Bootstrap!

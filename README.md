@@ -11,4 +11,4 @@ Libraries:
 Minimal Bootstrap
 AOS - animations on scroll
 
-This portfolio will be used to showcase all of my most recent projects and will be updated frequently.
+This portfolio will be used to showcase my most recent projects and will be updated frequently.

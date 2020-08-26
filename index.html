@@ -1,364 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="scss/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap"
-      rel="stylesheet"
-    />
 
-    <script
-      async
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="scss/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/navbar.js" async></script>
-    <script src="js/projectCards.js" async></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 
-    <title>PJ Wise: Web Developer</title>
-  </head>
-  <body>
-    <div class="allContent" id="topPage">
-      <div class="header">
-        <nav
-          class="navbar navbar-expand-md navbar-light bg-transparent fixed-top"
-        >
-          <a class="navbar-brand" href="#">
-            <img src="imgs/PJW LOGO.png" class="navLogo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li
-                class="nav-item active"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                <a class="nav-link" href="#"
-                  >HOME<span class="sr-only"></span
-                ></a>
-              </li>
-              <li
-                class="nav-item"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                <a class="nav-link" href="#toContent">ABOUT</a>
-              </li>
-              <li
-                class="nav-item"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                <a class="nav-link" href="#projects">PROJECTS</a>
-              </li>
-              <li
-                class="nav-item"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
-                <a class="nav-link" href="#contact">CONTACT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  RESUME/SOCIAL
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./ResumeCURRENT (1).pdf"
-                    >RESUME(PDF)</a
-                  >
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https://github.com/pj-wise"
-                    >GITHUB</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="https://www.linkedin.com/in/pearl-jamie-wise-104060188/"
-                    >LINKEDIN</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="headerContent">
-          <div class="name animated fadeInDown">
-            <h1>Pearl Jamie Wise</h1>
-          </div>
-          <div class="title animated fadeIn delay-1s">
-            <h2>Web Developer</h2>
-          </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/navbar.js" async></script>
+  <script src="js/projectCards.js" async></script>
 
-          <a
-            href="#toContent"
-            class="learnBtn btn btn-light"
-            data-aos="fadeIn"
-            data-aos-duration="1600"
-            data-aos-delay="1200"
-            >Learn More</a
-          >
-        </div>
-        <div id="toContent"></div>
-      </div>
-      <div class="mainContent" id="mainContent">
-        <section class="about" id="about">
-          <h2>ABOUT</h2>
-          <br />
-          <p>
-            Hello, my name is Pearl Jamie Wise and I am a Full Stack Web
-            Developer based out of Jensen Beach, Florida. I have a passion for
-            creating mobile-friendly websites and I am currently seeking a
-            full-time position along with freelance work for individuals or
-            small businesses.
-          </p>
+  <title>PJ Wise: Web Developer</title>
+</head>
 
-          <h4>WHAT I KNOW</h4>
-          <div class="know1">
-            <div class="icon" data-aos="fade-up" data-aos-delay="200">
-              <img src="imgs/html-icon.png" />
-              <p>HTML</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="200">
-              <img src="imgs/css-icon.png" />
-              <p>CSS</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="200">
-              <img src="imgs/sass-icn.png" />
-              <p>SASS</p>
-            </div>
-          </div>
-          <div class="know2">
-            <div class="icon" data-aos="fade-up" data-aos-delay="300">
-              <img src="imgs/boot-icon.png" />
-              <p>BOOTSTRAP</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="300">
-              <img src="imgs/photoshop-icon.png" />
-              <p>PHOTOSHOP</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="300">
-              <img src="imgs/react-icon.png" />
-              <p>REACT</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="300">
-              <img src="imgs/js-icon.png" />
-              <p>JAVASCRIPT</p>
-            </div>
-          </div>
-          <h4>WHAT I AM LEARNING</h4>
-          <div class="know1">
-            <div class="icon" data-aos="fade-up" data-aos-delay="400">
-              <img src="imgs/node-icon.png" />
-              <p>NODE</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="400">
-              <img src="imgs/angular-512.png" />
-              <p>ANGULAR</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="400">
-              <img src="imgs/php-icon.png" />
-              <p>PHP</p>
-            </div>
-          </div>
-          <div class="know2">
-            <div class="icon" data-aos="fade-up" data-aos-delay="500">
-              <img src="imgs/java-icon.png" />
-              <p>JAVA</p>
-            </div>
-            <div class="icon" data-aos="fade-up" data-aos-delay="500">
-              <img src="imgs/python-icon.png" />
-              <p>PYTHON</p>
-            </div>
-          </div>
-          <div id="projects"></div>
-          <div class="calendarCont">
-            <h5>GitHub Activity</h5>
-            <img
-              src="http://ghchart.rshah.org/0872ba/pj-wise"
-              class="calendar"
-            />
-          </div>
-        </section>
-        <section class="projects">
-          <h2>PROJECTS</h2>
-          <div class="cardContainer"></div>
-        </section>
-        <section id="contact">
-          <div class="center">
-            <h2>CONTACT</h2>
-          </div>
-          <div id="sendmessage">
-            Your message has been sent. Thank you!
-          </div>
-          <div id="errormessage"></div>
-          <div class="contact-page">
-            <div class="container">
-              <div class="row contact-wrap">
-                <div class="col-md">
-                  <form
-                    action="contactform/contactform.php"
-                    method="post"
-                    role="form"
-                    class="contactForm"
-                  >
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 4 chars"
-                      />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        data-rule="email"
-                        data-msg="Please enter a valid email"
-                      />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="subject"
-                        id="subject"
-                        placeholder="Subject"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 8 chars of subject"
-                      />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        rows="5"
-                        data-rule="required"
-                        data-msg="Please write something for us"
-                        placeholder="Message"
-                      ></textarea>
-                      <div class="validation"></div>
-                    </div>
-
-                    <div class="text-center">
-                      <button
-                        type="submit"
-                        class="btn btn-primary btn-lg"
-                        id="mapLoc"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </form>
-                </div>
+<body>
+  <div class="allContent" id="topPage">
+    <div class="header">
+      <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/PJW LOGO.png" class="navLogo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#">HOME<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#toContent">ABOUT</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#projects">PROJECTS</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                RESUME/SOCIAL
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Resume_Current.pdf">RESUME(PDF)</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://github.com/pj-wise">GITHUB</a>
+                <a class="dropdown-item" href="https://www.linkedin.com/in/pearl-jamie-wise-104060188/">LINKEDIN</a>
               </div>
-              <!--/.row-->
-            </div>
-            <!--/.container-->
-          </div>
-          <!--/#contact-page-->
-        </section>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="headerContent">
+        <div class="name animated fadeInDown">
+          <h1>Pearl Jamie Wise</h1>
+        </div>
+        <div class="title animated fadeIn delay-1s">
+          <h2>Web Developer</h2>
+        </div>
+
+        <a href="#toContent" class="learnBtn btn btn-light" data-aos="fadeIn" data-aos-duration="1600"
+          data-aos-delay="1200">Learn More</a>
       </div>
-      <footer>
-        <div class="footerContainer">
-          <div class="copyright">
-            <a href="#topPage" class="copyright">
-              <script language="javascript" type="text/javascript">
-                var today = new Date();
-                var year = today.getFullYear();
-                document.write(year);
-              </script>
-              © pjwisedevelopment
-            </a>
+      <div id="toContent"></div>
+    </div>
+    <div class="mainContent" id="mainContent">
+      <section class="about" id="about">
+        <h2>ABOUT</h2>
+        <br />
+        <p>
+          Hello, my name is Pearl Jamie Wise and I am a Full Stack Web
+          Developer based out of Jensen Beach, Florida. I have a passion for
+          creating mobile-friendly websites and I am currently seeking a
+          full-time position along with freelance work for individuals or
+          small businesses.
+        </p>
+
+        <h4>WHAT I KNOW</h4>
+        <div class="know1">
+          <div class="icon" data-aos="fade-up" data-aos-delay="200">
+            <img src="imgs/html-icon.png" />
+            <p>HTML</p>
           </div>
-          <div class="footerLinks">
-            <a class="footNum" href="https://github.com/pj-wise"
-              >GitHub: https://github.com/pj-wise</a
-            >
-            <br />
-            <a class="footNum" href="tel:8478099721">TEL: (847)809-9721</a>
-            <br />
-            <a class="footNum" href="mailto:pjay.wise@gmail.com"
-              >pjay.wise@gmail.com</a
-            >
-            <br />
+          <div class="icon" data-aos="fade-up" data-aos-delay="200">
+            <img src="imgs/css-icon.png" />
+            <p>CSS</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="200">
+            <img src="imgs/sass-icn.png" />
+            <p>SASS</p>
           </div>
         </div>
-      </footer>
-    </div>
+        <div class="know2">
+          <div class="icon" data-aos="fade-up" data-aos-delay="300">
+            <img src="imgs/boot-icon.png" />
+            <p>BOOTSTRAP</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="300">
+            <img src="imgs/photoshop-icon.png" />
+            <p>PHOTOSHOP</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="300">
+            <img src="imgs/react-icon.png" />
+            <p>REACT</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="300">
+            <img src="imgs/js-icon.png" />
+            <p>JAVASCRIPT</p>
+          </div>
+        </div>
+        <h4>WHAT I AM LEARNING</h4>
+        <div class="know1">
+          <div class="icon" data-aos="fade-up" data-aos-delay="400">
+            <img src="imgs/node-icon.png" />
+            <p>NODE</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="400">
+            <img src="imgs/angular-512.png" />
+            <p>ANGULAR</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="400">
+            <img src="imgs/php-icon.png" />
+            <p>PHP</p>
+          </div>
+        </div>
+        <div class="know2">
+          <div class="icon" data-aos="fade-up" data-aos-delay="500">
+            <img src="imgs/java-icon.png" />
+            <p>JAVA</p>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-delay="500">
+            <img src="imgs/python-icon.png" />
+            <p>PYTHON</p>
+          </div>
+        </div>
+        <div id="projects"></div>
+        <div class="calendarCont">
+          <h5>GitHub Activity</h5>
+          <img src="http://ghchart.rshah.org/0872ba/pj-wise" class="calendar" />
+        </div>
+      </section>
+      <section class="projects">
+        <h2>PROJECTS</h2>
+        <div class="cardContainer"></div>
+      </section>
+      <section id="contact">
+        <div class="center">
+          <h2>CONTACT</h2>
+        </div>
+        <div id="sendmessage">
+          Your message has been sent. Thank you!
+        </div>
+        <div id="errormessage"></div>
+        <div class="contact-page">
+          <div class="container">
+            <div class="row contact-wrap">
+              <div class="col-md">
+                <form action="contactform/contactform.php" method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                      data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                      data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                      data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
 
-    <!-- <script
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg" id="mapLoc">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!--/.row-->
+          </div>
+          <!--/.container-->
+        </div>
+        <!--/#contact-page-->
+      </section>
+    </div>
+    <footer>
+      <div class="footerContainer">
+        <div class="copyright">
+          <a href="#topPage" class="copyright">
+            <script language="javascript" type="text/javascript">
+              var today = new Date();
+              var year = today.getFullYear();
+              document.write(year);
+            </script>
+            © pjwisedevelopment
+          </a>
+        </div>
+        <div class="footerLinks">
+          <a class="footNum" href="https://github.com/pj-wise">GitHub: https://github.com/pj-wise</a>
+          <br />
+          <a class="footNum" href="tel:8478099721">TEL: (847)809-9721</a>
+          <br />
+          <a class="footNum" href="mailto:pjay.wise@gmail.com">pjay.wise@gmail.com</a>
+          <br />
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script> -->
-    <script src="js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
 
-    <script src="contactform/contactform.js"></script>
-    <!-- <script
+  <script src="contactform/contactform.js"></script>
+  <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script> -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

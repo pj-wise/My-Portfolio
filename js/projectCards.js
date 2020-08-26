@@ -1,7 +1,7 @@
 const projectInfo = [
   {
     name: "Nasa Photo of the Day",
-    img: "/imgs/Npotd.jpeg",
+    img: "/imgs/Npotd.png",
     languages: "React, JS, SCSS",
     info:
       "Small CRA project made with the Nasa API. Pick a date (today's or any previous date) and a new photo with info will be rendered.",
@@ -11,7 +11,7 @@ const projectInfo = [
   },
   {
     name: "GitHub Finder",
-    img: "/imgs/gitFinder-screen.jpeg",
+    img: "/imgs/gitFinder.png",
     languages: "React, JS, CSS",
     info:
       "Practice project using React.js. Site incorporates the use of GitHub's API and allows you to search their user database",
@@ -19,11 +19,11 @@ const projectInfo = [
     codeLink: "https://github.com/pj-wise/github-finder/blob/master/src/App.js"
   },
   {
-    name: "DryMasterFL",
-    img: "/imgs/dmresto.png",
-    languages: "HTML, CSS, JS, Bootstrap",
-    info: `A recent freelance website made for a local business, client wanted to incorporate the use of a Bootstrap template. (code private per clients request)`,
-    siteLink: "https://drymasterfl.com",
+    name: "Cohen Restoration",
+    img: "/imgs/cohen.png",
+    languages: "React, Material Ui, Reactstrap",
+    info: `A recent freelance project for a growing and local mold remediation company. The site is a React SPA (code private per clients request)`,
+    siteLink: "https://cohenrestoration.com",
     codeLink: "#projects"
   },
   {
@@ -45,7 +45,7 @@ projectInfo.forEach(data => {
   cardSection.appendChild(projectComp(data));
 });
 
-function projectComp(data) {
+function projectComp (data) {
   //elements and classList
   const projectCard = document.createElement("div");
   projectCard.classList.add("card");
